@@ -1,19 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-//import './css/search.css'
-//import './css/search.less'
-import logo from './images/logo.png'
-   
-class Search extends React.Component{
+import MediaQuery from 'react-responsive'
+import 'antd/dist/antd.css';
+
+import PCIndex from './index/Components/pc_index'
+import MobileIndex from './index/Components/mobile_index'
+
+class Root extends React.Component{
    render(){
-       return <div class="search-text">
-           This is a test text
-           <img src={ logo } />
+       return <div>
+            <h1>My index</h1>
+            <MediaQuery query="(min-device-width:1224px)">
+                <PCIndex></PCIndex>
+            </MediaQuery>
+
+            <MediaQuery query="(max-device-width:1224px)">
+                <MobileIndex></MobileIndex>
+            </MediaQuery>
        </div>
    }
 }
    
 ReactDOM.render(
-   <Search />,
+   <Root />,
    document.getElementById('root')
 )

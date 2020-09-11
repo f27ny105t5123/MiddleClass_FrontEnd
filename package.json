@@ -32,6 +32,9 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@babel/preset-react": "^7.10.4"
+    "@ant-design/icons": "^4.2.2",
+    "@babel/preset-react": "^7.10.4",
+    "antd": "^4.6.3",
+    "react-responsive": "^8.1.0"
   }
 }
