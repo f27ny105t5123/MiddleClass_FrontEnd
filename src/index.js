@@ -9,7 +9,6 @@ import MobileIndex from './index/Components/mobile_index'
 class Root extends React.Component{
    render(){
        return <div>
-            <h1>My index</h1>
             <MediaQuery query="(min-device-width:1224px)">
                 <PCIndex></PCIndex>
             </MediaQuery>

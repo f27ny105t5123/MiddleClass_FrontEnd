@@ -5,11 +5,38 @@
 }
 
 .logo img{
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
 }
 
 .logo span{
-    font-size: 24px;
+    font-size: 15px;
     padding-left: 5px;
+}
+
+footer{
+    text-align: center;
+}
+
+.container{
+    padding-top: 10px;
+}
+
+.leftContainer{
+    width: 400px;
+    float: left;
+    display: flex;
+}
+
+.carousel{
+    float: left;
+    width: 400px;
+}
+
+.topNewsList{
+    float: left;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
 }
